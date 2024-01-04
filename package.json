@@ -1,0 +1,24 @@
+{
+  "name": "cesargbkr.github.io",
+  "version": "1.0.0",
+  "description": "Personal page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"browser-sync start --server --files 'index.html'"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CesarGBkR/CesarGBkR.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CesarGBkR/CesarGBkR.github.io/issues"
+  },
+  "homepage": "https://github.com/CesarGBkR/CesarGBkR.github.io#readme",
+  "devDependencies": {
+    "browser-sync": "^3.0.2"
+  }
+}
