@@ -13,542 +13,324 @@
 }
 
 html{
-    font-size: 62.5%;
-    margin: 0;
-    padding: 0;
-    background: #1f1135;
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+  background: #1f1135;
 }
+
 body{
-    width: auto;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+
+h2{
+  font-family: Modern;
+  font-size: 2rem;
+  
+  background: linear-gradient(180deg, #7EE70F,#1FA819);
+  -webkit-background-clip: text;
+  background-clip: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  color: transparent;
+}
+a{
+  font-family: Modern;
+  font-size: 2rem;
+  
+  background: linear-gradient(180deg, #7EE70F,#1FA819);
+  -webkit-background-clip: text;
+  background-clip: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  color: transparent;
+  text-decoration: underline green;
+}
+main{
+  flex: 1px;
+  padding: 20px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 0;
+  overflow: hidden;
+  z-index: 100;
+  background-color: #1f1135b3;
+  -webkit-box-shadow: 5px 5px 10px 5px #0d0214; 
+  box-shadow: 5px 5px 20px 0px #6947BA;
+}
+
+.slider {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.slider .slide-track {
+  display: flex;
+  animation: scroll 40s linear infinite;
+  -webkit-animation: scroll 40s linear infinite;
+  width: calc(70px * 40);
+}
+
+.slider .slide {
+  width: 50px;
+  height: 50px;
+  padding: 0 10px;
+}
+
+.slider .slide img {
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-70px * 20));
+    transform: translateX(calc(-70px * 20));
+  }
+}
+
 .nav{
-    display: flex;
-    border-radius: 10px;
-    height: 5rem;
-    width: 100%;
-    background-color: #1f1135b3;
-    position: relative;
-    -webkit-box-shadow: 5px 5px 10px 5px #0d0214; 
-    box-shadow: 5px 5px 20px 0px #6947BA;
+  display: flex;
+  border-radius: 10px;
+  height: 5rem;
+  width: 100%;
+  background-color: #1f1135b3;
+  position: relative;
+  -webkit-box-shadow: 5px 5px 10px 5px #0d0214; 
+  box-shadow: 5px 5px 20px 0px #6947BA; 
 }
 
 .navbutton{
-    display: flex;
-    border-radius: 1rem;
-    width: 3rem;
-    height: 3rem;
-    margin: auto;
-}
-
-.logo{
-    display: flexbox;
-    width: 15rem;
-    height: 4rem;
-    position: absolute;
-    top: .5rem;
-    left: 1rem;
+  display: flex;
+  border-radius: 1rem;
+  width: 3rem;
+  height: 3rem;
+  margin: auto;
 }
 
 .linkedin{
-    position:absolute;
-    top: 1rem;
-    right: 1rem;
+  position:absolute;
+  top: 1rem;
+  right: 1rem;
 }
 .github{
-    position:absolute;
-    top: 1rem;
-    right: 5rem;
+  position:absolute;
+  top: 1rem;
+  right: 5rem;
 }
 .twitter{
-    position:absolute;
-    top: 1rem;
-    right: 9rem;
+  position:absolute;
+  top: 1rem;
+  right: 9rem;
 }
 .blog{
-    position:absolute;
-    top: 1rem;
-    right: 13rem;
-}
-.welcome{
-    margin-left: 1.5rem;
-    font-family: Qualy;
-    font-size: 6rem;
-    background: linear-gradient(180deg, #7EE70F,#1FA819);
-    -webkit-background-clip: text;
-    background-clip: inset 0 0 6px rgba(0, 0, 0, 0.1); 
-    color: transparent; 
+  position:absolute;
+  top: 1rem;
+  right: 13rem;
 }
 
-.presentation{
-    position: absolute;
-    top: 25.5rem;
-    font-family: Modern;
-    font-size: 2.25rem;
-    background: linear-gradient(180deg, #7EE70F,#1FA819);
-    -webkit-background-clip: text;
-    background-clip: inset 0 0 6px rgba(0, 0, 0, 0.1);
-    color: transparent;  
+.Container{
+  display: flex;
+  width: 100%;
+  height: 20rem;
+
+  position: relative;
+  top: 0rem;
+  left: 0rem;
+} 
+.CTL{
+
+  width: 18rem;
+  position: relative;
+  top: 0rem;
+  left: 2rem;
+
+}
+.CIR{
+  position: relative;
+  top: 5rem;
+  left: 3rem;
+
+  width: 10rem;
+  height: 10rem;
+}
+.CTR{
+  width: 18rem;
+  position: relative;
+  top: 0rem;
+  left: 5rem;
 }
 
-.aboutMe{
-    font-size: Modern;
-    font-size: 2rem;
-    background: linear-gradient(180deg, #7EE70F,#1FA819);
-    -webkit-background-clip: text;
-    background-clip: inset 0 0 6px rgba(0, 0, 0, 0.1);
-    color: transparent;  
-}
-.Cesar{
-    background-color: #290e3eb3;
-    border-radius:100%;
-    width: 10rem;
-    height: 10rem;
-    position: absolute;
-    right:2rem;
-    top: 9rem;
+.CIL{
+  position: relative;
+  top: 5rem;
+  left: 2rem;
 
-    -webkit-box-shadow: 5px 5px 10px 5px #0d0214; 
-    box-shadow: 0px 0px 15px 5px #6947BA;
-}
-.body{
-    background-color: #290e3e99;
-    width: 90%;
-    height: 50rem;
-    position: relative;
-    left: 5%;
-    top: 15rem;
-    opacity: 100%;
-    border-radius: 3rem;
-    display: flex;
-    justify-content: center;
-    
-    -webkit-box-shadow: 5px 5px 15px 5px #0d0214; 
-    box-shadow: 0px 0px 25px 0px #6947BA;
+  width: 10rem;
+  height: 10rem;
 }
 
-.borderbody{
-    background-color: none;
-    width: 89%;
-    height: 91%;
-    position: relative;
-    top: 3%;
-    display: flex;
-    justify-content: center;
-
-border-color: #68be0c;
-    border-width: 7px;
-    border-style: solid;
-    border-radius: 15px;
-}
-
-.bar{
-    display: flexbox;
-    border-radius: .5rem;
-    background: linear-gradient(180deg, #7EE70F,#68be0c);
-    width: 90%;
-    height: 5%;
-    position: relative;
-    top: 3%;
-
-    -webkit-box-shadow: 5px 5px 15px 5px #1a0e22; 
-    box-shadow: 5px 5px 15px 5px #0e0116;
-}
-
-.point{
-    display: flex;
-    border-radius: 100%;
-    width: 1.5rem;
-    height: 1.5rem;
-    background: linear-gradient(to top right, #320d4e, #6e1dac);
-    position: relative;
-    top: 15%;
-    left: .75rem;
-}
-.point2{
-    width: 1.2rem;
-    height: 1.2rem;
-    position: absolute;
-    top: 25%;
-    left: 3rem;
-
-    border-radius: 100%;
-    background: linear-gradient(to top right, #320d4e, #6e1dac);
-}
-
-.point3{
-    position: absolute;
-    left: 4.5rem;
-}
-
-.terminalName{
-    border-radius: .5rem;
-    width: 12.5rem;
-    height: 1.5rem;
-    position: absolute;
-    top: 15%;
+@media only screen and (min-width: 400px) {
+  
+  .CTL{
+    left: 4rem;
+  }
+  .CIR{
+    left: 5rem;
+  }
+  .CTR{
     left: 8rem;
+  }
+  .CIL{
+    left: 4rem;
+  }
 
-    text-align: center;
-    background: linear-gradient(to top right, #320d4e, #6e1dac)
-    
-}
-.terminalNameText{
-    font-family: Modern;
-    font-size: 1.1rem;
-    font-weight: bolder;
-    background: linear-gradient(180deg, #7EE70F,#1FA819);
-    -webkit-background-clip: text;
-    background-clip: inset 0 0 6px rgba(0, 0, 0, 0.1);
-    color: transparent; 
-}
-.atributes{
-    position: absolute;
-    top: 10%;
-    left: 5%;
-    width: 90%;
-    height: 87%;
-    opacity: 100%;
-}
-.link{
-    font-size: 1.2rem;
-    font-family: Qualy;
-    text-decoration: underline;
-    background: linear-gradient(180deg, #7EE70F,#1FA819);
-    -webkit-background-clip: text;
-    background-clip: inset 0 0 6px rgba(0, 0, 0, 0.1);
-    color: transparent;  
-}
-.webDiv{
-    position: relative;
-    top: 3%;
-
-    font-family: Modern;
-    font-size: 1.5rem;
-    font-weight: bolder;
-    background: linear-gradient(180deg, #7EE70F,#1FA819);
-    -webkit-background-clip: text;
-    background-clip: inset 0 0 6px rgba(0, 0, 0, 0.1);
-    color: transparent;  
 }
 
-.ctfDiv{
-    position: relative;
-    top: 12.5%;
-}
-.designeDiv{
-    position: relative;
-    top: 22.5%;
-}
+@media only screen and (min-width: 800px) {
+  h2{
+    font-size: 4rem;
+  }
+  a{
+    font-size: 4rem;
+  }
 
-@media only screen and (min-width: 600px) {
-    h1{
-        display: flex-box;
-    }
-.nav{
+  .nav{
     height: 6rem;
-}
-.navbutton{
+  }
+  .navbutton{
+    top: 0.5rem;
     width: 5rem;
     height: 5rem;
-}
-.logo{
-width: 25rem;
-height: 6rem;
-position: absolute;
-top: 0rem;
-left: 1rem;
-}
-
-.linkedin{
-    position:absolute;
-    top: .5rem;
-    right: 1rem;
-}
-.github{
-    position:absolute;
-    top: .5rem;
-    right: 7rem;
-}
-.twitter{
-    position:absolute;
-    top: .5rem;
-    right: 13rem;
-}
-.blog{
-    position:absolute;
-    top: .5rem;
-    right: 19rem;
-}
-.welcome{
-    font-size: 8rem;
-    position: relative;
-    top: 0rem;
-    left: 3rem;
-}
-.presentation{
-    position: absolute;
-    top: 30rem;
-    font-size: 3rem; 
-}
-.Cesar{
-    width: 18rem;
-    height: 18rem;
-    position: absolute;
-    right:5rem;
-    top: 9rem;
-}
-.borderbody{
-    width: 90%;
-}
-.bar{
-    width: 95%;
-    height: 6%;
-    position: relative;
-}
-.point{
-    position: relative;
-    top: 18%;
-    left: 1.8rem;
-}
-.point2{
-    width: 1.3rem;
-    height: 1.3rem;
-    position: absolute;
-    top: 25.1%;
-    left: 4.3rem;
-}
-
-.point3{
-    position: absolute;
-    left: 6.1rem;
-}
-.terminalName{
-    width: 60%;
-    height: 1.75rem;
-    position: absolute;
-    top: 15.6%;
-    left: 14rem;
-    
-}
-.terminalNameText{
-    font-size: 1.75rem;
-}
-.link{
-    font-size: 1.5rem;
-}
-.webDiv{
-    position: relative;
-    top: 7%;
-
-    font-size: 2rem;
-}
-
-.ctfDiv{
-    position: relative;
-    top: 15.5%;
-}
-.designeDiv{
-    position: relative;
-    top: 25.5%;
-}
-}
-
-@media only screen and (min-width: 1300px) {
-    h1{
-        display: flex-box;
-    }
-.nav{
-    height: 7rem;
-}
-.navbutton{
-    width: 6rem;
-    height: 6rem;
-}
-.logo{
-width: 40rem;
-height: 7rem;
-position: absolute;
-top: 0rem;
-left: 1rem;
-}
-
-.linkedin{
-    position:absolute;
+  }
+  .linkedin{
     right: 2rem;
-}
-.github{
-    position:absolute;
-    right: 10rem;
-}
-.twitter{
-    position:absolute;
-    right: 18rem;
-}
-.blog{
-    position:absolute;
-    right: 26rem;
-}
-.welcome{
-    font-size: 10rem;
-    position: relative;
-    top: 3rem;
-    left: 5%;
-}
-.presentation{
-    width: 125rem;
-    height: 20rem;
-    position: absolute;
-    top: 40rem;
-    left: 5%;
-    font-size: 4rem; 
-}
-.Cesar{
-    width: 25rem;
-    height: 25rem;
-    position: absolute;
-    right:15rem;
-    top: 11rem;
-}
-.body{
-    width: 80%;
-    height: 70rem;
-    position: relative;
-    left: 10%;
-    top: 35rem;
-}
+  }
+  .github{
+    right: 9rem;
+  }
+  .twitter{
+    right: 16rem;
+  }
+  .blog{
+    right: 23rem;
+  }
 
-.borderbody{
-    width: 95%;
-}
-.bar{
-    width: 95%;
-    height: 6%;
-    position: relative;
-}
-.point{
-    width: 2rem;
-    height: 2rem;
+  .Container{
+    height: 40rem;
+  }
+  .CTL{
+    width: 50%;
+    height:100%
+  }
+  .CIR{
+    width: 30rem;
+    height: 30rem;
+  }
+  .CTR{
+    width: 50%;
+    height: 100%;
+  }
 
-    position: relative;
-    top: 20%;
-    left: 1.8rem;
-}
-.point2{
-    width: 1.6rem;
-    height: 1.6rem;
-    position: absolute;
-    top: 27.5%;
-    left: 5.25rem;
-}
+  .CIL{
+    width: 30rem;
+    height: 30rem;
+  }
 
-.point3{
-    position: absolute;
-    left: 8rem;
-}
-.terminalName{
-    width: 70%;
-    height: 2.3rem;
-    position: absolute;
-    top: 18%;
-    left: 19rem;
-        
-}
-.link{
-    font-size: 2.3rem;
-}
-.webDiv{    
-        font-size: 3rem;
-}
+ .slider {
+    height: 100px;
+    width: 100%;
+  }
 
-.footer{
-    width: 0;
-    height: 0rem;
-}
-}
-@media only screen and (min-width: 1600px){
-    .nav{
-        height: 8rem;
+  .slider .slide-track {
+    width: calc(140px * 40);
+  }
+
+  .slider .slide {
+    width: 120px;
+    height: 100px;
+    padding: 0 20px;
+  }
+
+  @keyframes scroll {
+    100% {
+      -webkit-transform: translateX(calc(-140px * 20));
+      transform: translateX(calc(-140px * 20));
     }
-    .navbutton{
-        width: 7rem;
-        height: 7rem;
-    }
-    .logo{
-    width: 45rem;
+
+  }
+}
+@media only screen and (min-width: 1800px){
+  h2{
+    font-size: 8rem;
+  }
+  a{
+    font-size: 8rem;
+  }
+  .nav{
     height: 8rem;
-    position: absolute;
-    left: 3rem;
-    }
-    
-    .linkedin{
-        position:absolute;
-        right: 5rem;
-    }
-    .github{
-        position:absolute;
-        right: 15rem;
-    }
-    .twitter{
-        position:absolute;
-        right: 25rem;
-    }
-    .blog{
-        position:absolute;
-        right: 35rem;
-    }
-      .welcome{
-        position: relative;
-        left: 12.5%;
-    }
-    .presentation{
-        width: 75%;
-        position: absolute;
-        left: 12.5%;
-    }
-    .Cesar{
-        position: absolute;
-        top: 12rem;
-        right:10%;
-    }
-    .point{
-        width: 2.5rem;
-        height: 2.5rem;
+  }
+  .navbutton{
+    width: 7rem;
+    height: 7rem;
+  }
+  .linkedin{
+    right: 5rem;
+  }
+  .github{
+    right: 15rem;
+  }
+  .twitter{
+    right: 25rem;
+  }
+  .blog{
+    right: 35rem;
+  }
+  .Container{
+    height: 60rem;
+  } 
 
-        position: relative;
-        top: 15%;
-        left: 1.8rem;
-    }
-    .point2{
-        width: 2rem;
-        height: 2rem;
-        position: absolute;
-        top: 20%;
-        left: 5.5rem;
-    }
-    
-    .point3{
-        position: absolute;
-        left: 8.5rem;
-    }
-    .terminalName{
-        width: 70%;
-        height: 2.5rem;
-        position: absolute;
-        top: 15.6%;
-        left: 20rem;
-        
-    }
-    .terminalNameText{
-        font-size: 2rem;
-    }
-    .link{
-        font-size: 2.7rem;
-    }
-    .webDiv{    
-        font-size: 3.5rem;
-    }
+  .CTL{
+    left: 10rem;
+  }
+  .CIR{
+    left: 30rem;
+    width: 50rem;
+    height: 50rem;
+  }
+  .CTR{
+    left: 30rem;
+  }
+  .CIL{
+    left: 10rem;
+    width: 50rem;
+    height: 50rem;
+  }
+} 
+
+@media only screen and (min-width: 2300px) {
+
+  .CTL{
+    left: 40rem;
+  }
+  .CIR{
+    left: 50rem;
+  }
+  .CTR{
+    left: 50rem;
+  }
+  .CIL{
+  left: 40rem;
+  }
 }
